@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>playstation</title>
+    </head>
+      <body>
+        <div class="container">
+          <div class="navbar">
+               <img class="img1" src="Playstation_Img/logo.png">
+                <nav>
+                  <ul id="list--item">
+                    <li>game controllers</li>
+                    <li>VR accessories</li>
+                    <li>media remotes</li>
+                    <li>others</li>
+                  </ul>
+                </nav>
+              <img class="icon" src="Playstation_Img/menu.png" onclick="togglemenu()">
+           </div>
+           
+        <div class="row">
+              <div class="info">
+                 <h2>PS4 V2 <br>Dualshock 4 </h2>
+                  <p class="p1">
+                    wireless controller for Playstation 4
+                    <span>(compatible/generic)</span>
+                  </p>
+                <p class="p2">$32.50</p>
+                 <button type="submit">buy now<img class="img2" src="Playstation_Img/arrow.png"></button>
+              </div>
+            <div class="image">
+                <img src="Playstation_Img/controller.png" class="controller">
+                <div class="box"></div>
+            </div>
+           </div>
+        <div class="foo">
+            <img src="Playstation_Img/fb.png">
+            <img src="Playstation_Img/tw.png">
+            <img src="Playstation_Img/ig.png">
+        </div>
+       </div>
+       <script>
+       const lists = document.getElementById('list--item');
+       lists.style.maxHeight = '0px';
+        function togglemenu(){
+            if( lists.style.maxHeight == '0px'){
+                lists.style.maxHeight = '130px';
+            }else{
+                lists.style.maxHeight = '0px';
+            }
+        }
+       </script>
+      </body>
+</html>
